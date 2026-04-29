@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sam Blogs | Blogging & SEO</title>
+
+  <meta name="description" content="Sam Blogs - Learn blogging, SEO, freelancing and online skills for free.">
+  <meta name="keywords" content="blogging, SEO, freelancing, online earning, Sam Blogs">
+  <meta name="author" content="Samar">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Sam Blogs</h1>
+  <p>Learn Blogging, SEO & Online Skills ??</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Blogs</a>
+</nav>
+
+<section class="container">
+
+  <div class="blog-card">
+    <h2>How to Start a Blog</h2>
+    <p>Learn how to start a blog step by step.</p>
+    <button onclick="showBlog(1)">Read More</button>
+  </div>
+
+  <div class="blog-card">
+    <h2>Earn Money from Blogging</h2>
+    <p>Simple ways to earn online.</p>
+    <button onclick="showBlog(2)">Read More</button>
+  </div>
+
+  <div class="blog-card">
+    <h2>SEO Tips for Beginners</h2>
+    <p>Rank your website on Google.</p>
+    <button onclick="showBlog(3)">Read More</button>
+  </div>
+
+</section>
+
+<!-- BLOG CONTENT POPUP -->
+<div id="blogModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeBlog()" class="close">&times;</span>
+    <h2 id="blogTitle"></h2>
+    <p id="blogText"></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Sam Blogs</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
